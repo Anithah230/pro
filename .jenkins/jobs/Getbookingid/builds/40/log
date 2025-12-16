@@ -1,0 +1,42 @@
+Started by timer
+Running as SYSTEM
+Building in workspace C:\Users\anith\.jenkins\workspace\Getbookingid
+[Getbookingid] $ cmd /c call C:\Users\anith\AppData\Local\Temp\jenkins16185042190500445821.bat
+
+C:\Users\anith\.jenkins\workspace\Getbookingid>newman run "C:\Users\anith\OneDrive\Desktop\Restful-booker Getbookingid_json" n5 
+newman
+
+Restful-booker Getbookingids
+
+→ Createbooking
+  POST https://restful-booker.herokuapp.com/booking [200 OK, 954B, 5.5s]
+
+→ Createatoken
+  POST https://restful-booker.herokuapp.com/auth [200 OK, 784B, 298ms]
+
+→ UpdateBooking
+  PUT https://restful-booker.herokuapp.com/booking/3518 [405 Method Not Allowed, 781B, 328ms]
+
+→ Partialupdating
+  PATCH https://restful-booker.herokuapp.com/booking/3518 [405 Method Not Allowed, 781B, 231ms]
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                  4 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                  4 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                  4 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                  0 │                  0 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 6.8s                                          │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 259B (approx)                                │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 1612ms [min: 231ms, max: 5.5s, s.d.: 2.2s] │
+└───────────────────────────────────────────────────────────────────┘
+Finished: SUCCESS

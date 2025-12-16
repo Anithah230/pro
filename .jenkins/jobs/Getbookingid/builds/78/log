@@ -1,0 +1,42 @@
+Started by timer
+Running as SYSTEM
+Building in workspace C:\Users\anith\.jenkins\workspace\Getbookingid
+[Getbookingid] $ cmd /c call C:\Users\anith\AppData\Local\Temp\jenkins6961202477179882813.bat
+
+C:\Users\anith\.jenkins\workspace\Getbookingid>newman run "C:\Users\anith\OneDrive\Desktop\Restful-booker Getbookingid_json" n5 
+newman
+
+Restful-booker Getbookingids
+
+→ Createbooking
+  POST https://restful-booker.herokuapp.com/booking [200 OK, 943B, 1115ms]
+
+→ Createatoken
+  POST https://restful-booker.herokuapp.com/auth [200 OK, 772B, 219ms]
+
+→ UpdateBooking
+  PUT https://restful-booker.herokuapp.com/booking/3518 [405 Method Not Allowed, 777B, 323ms]
+
+→ Partialupdating
+  PATCH https://restful-booker.herokuapp.com/booking/3518 [405 Method Not Allowed, 777B, 230ms]
+
+┌─────────────────────────┬─────────────────────┬─────────────────────┐
+│                         │            executed │              failed │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              iterations │                   1 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│                requests │                   4 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│            test-scripts │                   4 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│      prerequest-scripts │                   4 │                   0 │
+├─────────────────────────┼─────────────────────┼─────────────────────┤
+│              assertions │                   0 │                   0 │
+├─────────────────────────┴─────────────────────┴─────────────────────┤
+│ total run duration: 2.1s                                            │
+├─────────────────────────────────────────────────────────────────────┤
+│ total data received: 260B (approx)                                  │
+├─────────────────────────────────────────────────────────────────────┤
+│ average response time: 471ms [min: 219ms, max: 1115ms, s.d.: 373ms] │
+└─────────────────────────────────────────────────────────────────────┘
+Finished: SUCCESS

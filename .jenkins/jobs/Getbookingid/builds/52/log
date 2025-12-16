@@ -1,0 +1,67 @@
+Started by timer
+Running as SYSTEM
+Building in workspace C:\Users\anith\.jenkins\workspace\Getbookingid
+[Getbookingid] $ cmd /c call C:\Users\anith\AppData\Local\Temp\jenkins7811323039199809747.bat
+
+C:\Users\anith\.jenkins\workspace\Getbookingid>newman run "C:\Users\anith\OneDrive\Desktop\Restful-booker Getbookingid_json" n5 
+newman
+
+Restful-booker Getbookingids
+
+→ Createbooking
+  POST https://restful-booker.herokuapp.com/booking [errored]
+     getaddrinfo ENOTFOUND restful-booker.herokuapp.com
+
+→ Createatoken
+  POST https://restful-booker.herokuapp.com/auth [errored]
+     getaddrinfo ENOTFOUND restful-booker.herokuapp.com
+
+→ UpdateBooking
+  PUT https://restful-booker.herokuapp.com/booking/3518 [errored]
+     getaddrinfo ENOTFOUND restful-booker.herokuapp.com
+
+→ Partialupdating
+  PATCH https://restful-booker.herokuapp.com/booking/3518 [errored]
+     getaddrinfo ENOTFOUND restful-booker.herokuapp.com
+
+┌─────────────────────────┬──────────┬──────────┐
+│                         │ executed │   failed │
+├─────────────────────────┼──────────┼──────────┤
+│              iterations │        1 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│                requests │        4 │        4 │
+├─────────────────────────┼──────────┼──────────┤
+│            test-scripts │        4 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│      prerequest-scripts │        4 │        0 │
+├─────────────────────────┼──────────┼──────────┤
+│              assertions │        0 │        0 │
+├─────────────────────────┴──────────┴──────────┤
+│ total run duration: 399ms                     │
+├───────────────────────────────────────────────┤
+│ total data received: 0B (approx)              │
+└───────────────────────────────────────────────┘
+
+[31m  # [39m[31m failure [39m[31m detail                                             [39m
+[90m    [39m[90m         [39m[90m                                                    [39m
+ 1.  Error                                                       
+              getaddrinfo ENOTFOUND restful-booker.herokuapp.com 
+              at request                                         
+              inside ""                                          
+[90m    [39m[90m         [39m[90m                                                    [39m
+ 2.  Error                                                       
+              getaddrinfo ENOTFOUND restful-booker.herokuapp.com 
+              at request                                         
+              inside ""                                          
+[90m    [39m[90m         [39m[90m                                                    [39m
+ 3.  Error                                                       
+              getaddrinfo ENOTFOUND restful-booker.herokuapp.com 
+              at request                                         
+              inside ""                                          
+[90m    [39m[90m         [39m[90m                                                    [39m
+ 4.  Error                                                       
+              getaddrinfo ENOTFOUND restful-booker.herokuapp.com 
+              at request                                         
+              inside ""                                          
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

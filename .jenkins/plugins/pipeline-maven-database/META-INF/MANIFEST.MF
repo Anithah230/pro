@@ -1,0 +1,32 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Pipeline Maven Plugin Database
+Specification-Version: 0.0
+Implementation-Title: Pipeline Maven Plugin Database
+Implementation-Version: 1469.ve15ca_a_b_90b_44
+Group-Id: org.jenkins-ci.plugins
+Artifact-Id: pipeline-maven-database
+Short-Name: pipeline-maven-database
+Long-Name: Pipeline Maven Plugin Database
+Url: https://github.com/jenkinsci/pipeline-maven-plugin/pipeline-maven-d
+ atabase
+Plugin-Version: 1469.ve15ca_a_b_90b_44
+Hudson-Version: 2.426.3
+Jenkins-Version: 2.426.3
+Plugin-Dependencies: h2-api:11.1.4.199-30.v1c64e772f3a_c;resolution:=opt
+ ional,mysql-api:8.4.0-31.va_b_5ce7933762;resolution:=optional,postgresq
+ l-api:42.7.2-40.v76d376d65c77;resolution:=optional,credentials:1371.vfe
+ e6b_095f0a_3,pipeline-maven-api:1469.ve15ca_a_b_90b_44
+Plugin-Developers: Cyrille Le Clerc:cleclerc:cleclerc@cloudbees.com,Alva
+ ro Lobato:alvarolobato:alobato@cloudbees.com,Arnaud Héritier:aheritier
+ :aheritier@apache.org,Benoit Guérin:bguerin:benoit.guerin1@free.fr
+Plugin-License-Name: The MIT license
+Plugin-License-Url: http://www.opensource.org/licenses/mit-license.php
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/pipeline-mave
+ n-plugin.git
+Plugin-ScmTag: e15caab90b445b1d28ee686efb0697002b562434
+Plugin-ScmUrl: https://github.com/jenkinsci/pipeline-maven-plugin
+Plugin-GitHash: e15caab90b445b1d28ee686efb0697002b562434
+Implementation-Build: e15caab90b445b1d28ee686efb0697002b562434
+

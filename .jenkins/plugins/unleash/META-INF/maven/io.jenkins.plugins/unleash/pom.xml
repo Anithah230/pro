@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>io.jenkins.plugins</groupId>
+  <artifactId>unleash</artifactId>
+  <version>100.v3f2fdc52f363</version>
+  <packaging>hpi</packaging>
+  <name>Unleash Maven Plugin</name>
+  <description>The Jenkins Plugins Parent POM Project</description>
+  <url>https://github.com/jenkinsci/unleash-plugin</url>
+  <inceptionYear>2016</inceptionYear>
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://www.opensource.org/licenses/mit-license.php</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>shillner</id>
+      <name>Stanley Hillner</name>
+      <organization>itemis AG</organization>
+      <organizationUrl>https://itemis.com/</organizationUrl>
+      <roles>
+        <role>creator (inactive)</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+    <developer>
+      <id>mhoffrog</id>
+      <name>Markus Hoffrogge</name>
+      <organization>Rockwell Automation</organization>
+      <organizationUrl>https://rockwellautomation.com</organizationUrl>
+      <roles>
+        <role>maintainer</role>
+      </roles>
+      <timezone>1</timezone>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git:https://github.com/jenkinsci/unleash-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/jenkinsci/unleash-plugin.git</developerConnection>
+    <tag>3f2fdc52f363d4d5a41567c3da995c1f1b43931f</tag>
+    <url>https://github.com/jenkinsci/unleash-plugin</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/releases/</url>
+    </repository>
+    <snapshotRepository>
+      <id>maven.jenkins-ci.org</id>
+      <url>https://repo.jenkins-ci.org/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.jenkins-ci.main</groupId>
+      <artifactId>maven-plugin</artifactId>
+      <version>3.23</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>io.github.mavenplugins</groupId>
+      <artifactId>unleash-utils</artifactId>
+      <version>3.2.0</version>
+      <scope>compile</scope>
+      <exclusions>
+        <exclusion>
+          <groupId>com.google.guava</groupId>
+          <artifactId>guava</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+  </dependencies>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <version>3.57</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

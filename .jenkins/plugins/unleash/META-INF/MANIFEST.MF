@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Created-By: Maven Archiver 3.6.0
+Build-Jdk-Spec: 17
+Specification-Title: Unleash Maven Plugin
+Specification-Version: 0.0
+Implementation-Title: Unleash Maven Plugin
+Implementation-Version: 100.v3f2fdc52f363
+Group-Id: io.jenkins.plugins
+Artifact-Id: unleash
+Short-Name: unleash
+Long-Name: Unleash Maven Plugin
+Url: https://github.com/jenkinsci/unleash-plugin
+Plugin-Version: 100.v3f2fdc52f363
+Hudson-Version: 2.440.3
+Jenkins-Version: 2.440.3
+Plugin-Dependencies: maven-plugin:3.23
+Plugin-Developers: Stanley Hillner:shillner:,Markus Hoffrogge:mhoffrog:
+Plugin-License-Name: MIT License
+Plugin-License-Url: http://www.opensource.org/licenses/mit-license.php
+Plugin-ScmConnection: scm:git:https://github.com/jenkinsci/unleash-plugi
+ n.git
+Plugin-ScmTag: 3f2fdc52f363d4d5a41567c3da995c1f1b43931f
+Plugin-ScmUrl: https://github.com/jenkinsci/unleash-plugin
+Plugin-GitHash: 3f2fdc52f363d4d5a41567c3da995c1f1b43931f
+Implementation-Build: 3f2fdc52f363d4d5a41567c3da995c1f1b43931f
+
